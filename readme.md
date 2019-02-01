@@ -1,1 +1,6 @@
-# 一个 Vue UI组件 
+# 一个 Vue UI组件
+作者： 我
+
+## 安装
+
+使用本框架前，请在 css 中开启 border-box
