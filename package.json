@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/yangdepp/golu/issues"
   },
-  "homepage": "https://github.com/yangdepp/golu#readme"
+  "homepage": "https://github.com/yangdepp/golu#readme",
+  "dependencies": {
+    "vue": "^2.5.22"
+  }
 }
