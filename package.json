@@ -2,7 +2,7 @@
   "name": "golu",
   "version": "0.0.1",
   "description": "一个UI框架",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,9 +21,16 @@
   },
   "homepage": "https://github.com/yangdepp/golu#readme",
   "dependencies": {
-    "vue": "^2.5.22"
+    "vue": "^2.5.22",
+    "vue-hot-reload-api": "^2.3.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
+    "@vue/component-compiler-utils": "^2.5.2",
+    "parcel-bundler": "^1.9.2",
+    "sass": "^1.16.1",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
