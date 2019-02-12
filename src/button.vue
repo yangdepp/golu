@@ -11,7 +11,16 @@
 <script>
   export default {
     // name: "g-button"
-    props: ['icon', 'iconPosition']
+    props: {
+      icon: {},
+      iconPosition: {
+        type: String,
+        default: 'left',
+        validator: function (value) {
+          return !(value !== 'left' && value !== 'right');
+        }
+      }
+    }
   };
 </script>
 <style lang="scss">
@@ -48,13 +57,15 @@
     > .content {
       order: 2;
     }
+
     &.icon-right {
       > .icon {
         order: 2;
         margin-left: .3em;
         margin-right: 0;
       }
-      > .content{
+
+      > .content {
         order: 1;
       }
     }
